@@ -1,0 +1,24 @@
+.header{
+    margin-top: 40px;
+    img{
+        display: none;
+    }
+    &__title{
+        cursor: pointer;
+        @include h-property(34px, 20px, 400)
+    }
+    &__container{
+        @include d-flex(row, space-between, center);
+    }
+    a{
+        @include h-property();
+        color: #CB9C57;
+        &:hover{
+            border-bottom: 1px solid black;
+            color: #000
+        }
+    }
+    &__list{
+        @include d-flex();
+    }
+}

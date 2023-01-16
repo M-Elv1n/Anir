@@ -1,0 +1,65 @@
+@media only screen and (max-width: 1199px){
+    .container{
+        max-width: 900px;
+        margin: auto
+    }
+    .office{
+        &__container{
+            @include d-flex(column-reverse);
+            img{
+                width: 100%;
+            }
+        }
+    }
+    .design{
+        &__story{
+            @include d-flex(column);
+        }
+    }
+    .footer{
+        @include d-flex(column);
+    }
+}
+
+@media only screen and (max-width: 991px) {
+    .container{
+        max-width: 700px;
+        margin: 0 150px;
+    }
+    .header{
+        padding: 10px 20px;
+        img{
+            display: block;
+            cursor: pointer;
+        }
+        &__list{
+            display: none;
+        }
+    }
+    .about{
+        img{
+            width: 100%;
+        }
+        &__container{
+            @include d-flex(column-reverse);
+        }
+    }
+    .proud{
+        &__img{
+            @include d-flex(column);
+        }
+    }
+    .design{
+        &__title{
+            @include h-property(30px, 30px);
+            width: 100%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 767px) {
+    .container{
+        max-width: 600px;
+    }
+}
